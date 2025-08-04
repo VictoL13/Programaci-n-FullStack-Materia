@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="Registro">Registrarse</h1>
+  <main>
+    <section>
+      <h4>Correo Electrónico</h4>
+      <input type="email" id="registroEmail" required />
+    </section>
+
+    <section>
+      <h4>Contraseña</h4>
+      <input type="password" id="registroPassword" required />
+    </section>
+
+    <button onclick="registrarUsuario()">Registrarse</button>
+
+    <p id="registroMensaje" style="color: green;"></p>
+
+    <!-- Botón oculto al principio -->
+    <div id="volverInicio" style="display: none; margin-top: 20px;">
+      <a href="index.html"><button>Volver a la página principal</button></a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

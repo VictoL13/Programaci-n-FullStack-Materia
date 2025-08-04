@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="TituloSesion">Iniciar Sesión</h1>
+  <main id="Sesion">
+    <section>
+      <h4>Correo Electrónico</h4>
+      <input type="email" id="loginEmail" required />
+    </section>
+
+    <section>
+      <h4>Contraseña</h4>
+      <input type="password" id="loginPassword" required />
+    </section>
+
+    <button onclick="iniciarSesion()">Ingresar</button>
+    <p id="loginMensaje" style="color: red;"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

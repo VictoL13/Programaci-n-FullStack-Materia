@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="saludo"></h1>
+  <button onclick="cerrarSesion()">Cerrar sesión</button>
+
+  <script>
+    const usuario = localStorage.getItem("usuarioActivo");
+
+    if (usuario) {
+      document.getElementById("saludo").textContent = `¡Bienvenido, ${usuario}!`;
+    } else {
+      window.location.href = "pagina2.html"; // Redirige si no inició sesión
+    }
+
+    function cerrarSesion() {
+      localStorage.removeItem("usuarioActivo");
+      window.location.href = "pagina2.html";
+    }
+  </script>
+</body>
+</html>
